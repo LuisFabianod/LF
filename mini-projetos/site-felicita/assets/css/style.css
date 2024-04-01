@@ -195,6 +195,89 @@ section.destaque {
     border: 1px solid white;
 }
 
+
+/* CONFIGURAÇÕES SECTION PRODUTOS */
+
+section.produtos {
+    margin-top: 10rem;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    height: 180rem;
+}
+
+.par-de-produtos1,
+.par-de-produtos2,
+.par-de-produtos3 {
+    display: flex;
+    height: 60rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.produto1,
+.produto2 {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#img-produto {
+    width: 30%;
+}
+
+.texto-produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    justify-content: space-around;
+}
+
+.preco {
+    display: flex;
+    flex-direction: column;
+}
+
+.preco-antigo {
+    text-decoration-line: line-through;
+}
+
+.p-produto {
+    font-size: 4rem;
+}
+
+.img-produto {
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.img-produto:hover {
+    cursor: pointer;
+}
+
+.btn-produto {
+    border-radius: .5rem;
+    cursor: pointer;
+    height: 5rem;
+    width: 10rem;
+    border: none;
+    outline: none;
+    background-color: #8c8b79;
+    color: #f6f0f0;
+    border: 1px solid #8c8b79;
+    font-family: Raleway, sans-serif;
+}
+
+.btn-produto:hover {
+    background-color: #acab99;
+}
+
+
+
 /* CONFIGURAÇÕES SEÇÃO SOBRE NÓS */
 
 section#sobre-nos {
@@ -228,39 +311,6 @@ section#sobre-nos {
     justify-content: center;
     width: 30%;
 }
-
-/* CONFIGURAÇÕES SECTION PRODUTOS */
-
-section.produtos {
-    font-size: 1.6rem;
-    display: flex;
-    flex-direction: column;
-
-    height: 50rem;
-}
-
-.titulo-produtos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10%;
-
-}
-
-div.produtos {
-    height: 100%;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.produto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
 
 
 
@@ -302,51 +352,33 @@ footer {
 
     /* SEÇÃO DESTAQUE */
     .destaque {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
         margin: auto;
         height: 80rem;
-        font-size: 1.6rem;
 
 
     }
 
     #destaque {
-        background-color: transparent;
-        display: flex;
         flex-direction: column;
     }
 
     .img-destaque {
         background-color: transparent;
         display: flex;
-        height: 60%;
-        width: 50%;
-        justify-content: center;
-        align-items: center;
-
-
     }
 
     .imagem-destaque {
         width: 22rem;
         height: 35rem;
-
     }
 
     .texto-destaque {
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
         height: 100%;
         width: 100%;
-        justify-content: center;
-        align-items: center;
         gap: 2rem;
         background-color: transparent;
-        border-radius: 2rem;
+
     }
 
     .p-destaque {
@@ -359,19 +391,78 @@ footer {
     }
 
     .btn-destaque {
-        cursor: pointer;
-        height: 10rem;
-        width: 15rem;
-        border: none;
-        outline: none;
         background-color: #b3b3a3;
         color: #f6f0f0;
         border: 1px solid #cfcbbf;
-        font-family: Raleway, sans-serif;
+
     }
 
     .btn-destaque:hover {
         background-color: #bebeaf;
+    }
+
+    /* CONFIGURAÇÕES SECTION PRODUTOS */
+
+
+    section.produtos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 360rem;
+    }
+
+    .par-de-produtos1,
+    .par-de-produtos2,
+    .par-de-produtos3 {
+        display: flex;
+        height: 120rem;
+        flex-direction: column;
+        gap: 10rem;
+    }
+
+    .produto1,
+    .produto2 {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+    }
+
+    
+
+    .texto-produto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        gap: 1rem;
+    }
+
+    .preco {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .preco-antigo {
+        text-decoration-line: line-through;
+    }
+
+
+    .img-produto {
+        width: 100%;
+
+    }
+    #img-produto {
+        max-width: 18.2rem;
+        min-width: 18.2rem;
+
+    }
+
+    .btn-produto {
+        height: 4rem;
+        width: 8rem;
     }
 
     /* SEÇÃO SOBRE NÓS */
@@ -401,57 +492,57 @@ footer {
         width: 40%;
     }
 
+
+
+}
+
+@media screen and (min-width: 850px) and (max-width: 1321px) {
+
+    /* CONFIGURAÇÕES DESTAQUE */
+    .texto-destaque {
+        width: 40%;
+    }
+
+    #p-destaque {
+        font-size: 2rem;
+    }
+
+    .preço-destaque {
+        font-size: 6rem;
+    }
+
     /* CONFIGURAÇÕES SECTION PRODUTOS */
 
     section.produtos {
-        font-size: 1.6rem;
         display: flex;
         flex-direction: column;
-
-        height: 150rem;
+        gap: 10rem;
     }
 
-    .titulo-produtos {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 10%;
-
-    }
-
-    div.produtos {
-        height: 100%;
+    .par-de-produtos1,
+    .par-de-produtos2,
+    .par-de-produtos3 {
+        min-width: 35rem;
         display: flex;
         flex-direction: column;
+        gap: 10rem;
 
     }
 
-    .produto {
-        height: 16.7%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .produto1,
+    .produto2 {
+        gap: 10rem;
+    }
 
+
+
+    .texto-produto {
+        gap: 2rem;
     }
 
     #img-produto {
-        height: 100%;
-        width: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        max-width: 18.2rem;
+        min-width: 18.2rem;
 
     }
-
-    .texto-produt {
-        height: 100%;
-        width: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-    }
-
-
-
 }
