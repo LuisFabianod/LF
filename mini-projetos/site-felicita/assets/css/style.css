@@ -525,6 +525,7 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 10rem;
+        
     }
 
     .par-de-produtos1,
@@ -534,7 +535,7 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 10rem;
-
+        margin-bottom: 15rem;
     }
 
     .produto1,
@@ -551,6 +552,7 @@ footer {
     #img-produto {
         max-width: 18.2rem;
         min-width: 18.2rem;
+        
 
     }
 }
