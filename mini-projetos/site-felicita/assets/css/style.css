@@ -19,6 +19,7 @@ html {
     scrollbar-width: none;
     height: 100vh;
     font-family: Raleway, sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* CONFIGURAÇÕES HEADER */
@@ -55,13 +56,19 @@ img.logo-felicita {
 
 }
 
-.navigation p {
+.navigation li {
+    list-style: none;
+
+}
+
+.navigation li>a {
+    color: #818173;
     position: relative;
     display: inline-block;
     text-decoration: none;
 }
 
-.navigation p::after {
+.navigation li>a::after {
     content: '';
     position: absolute;
     width: 0;
@@ -73,7 +80,7 @@ img.logo-felicita {
 
 }
 
-.navigation p:hover::after {
+.navigation li>a:hover::after {
 
     width: 100%;
 }
@@ -198,7 +205,7 @@ section.destaque {
 
 /* CONFIGURAÇÕES SECTION PRODUTOS */
 
-section.produtos {
+section#produtos {
     margin-top: 10rem;
     font-size: 1.6rem;
     display: flex;
@@ -404,7 +411,7 @@ footer {
     /* CONFIGURAÇÕES SECTION PRODUTOS */
 
 
-    section.produtos {
+    section#produtos {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -429,7 +436,7 @@ footer {
         align-items: center;
     }
 
-    
+
 
     .texto-produto {
         display: flex;
@@ -454,6 +461,7 @@ footer {
         width: 100%;
 
     }
+
     #img-produto {
         max-width: 18.2rem;
         min-width: 18.2rem;
