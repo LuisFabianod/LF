@@ -3,6 +3,18 @@
     src: url('../fonts/Raleway-VariableFont_wght.ttf');
 }
 
+@keyframes transitionMenu {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +31,7 @@ html {
     color: #818173;
     scrollbar-width: none;
     scroll-behavior: smooth;
+    animation: transitionMenu 0.75s;
 }
 
 /* CONFIGURAÇÕES HEADER */
@@ -344,6 +357,7 @@ footer {
     height: 5em;
     font-size: 1.6rem;
 }
+
 
 @media screen and (max-width: 850px) {
     header {
