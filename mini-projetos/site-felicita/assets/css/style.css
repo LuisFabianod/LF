@@ -4,7 +4,6 @@
 }
 
 * {
-
     margin: 0;
     padding: 0;
 }
@@ -14,24 +13,24 @@
 }
 
 html {
+    height: 100vh;
     background-color: #f6f0f0;
+    font-family: Raleway, sans-serif;
     color: #818173;
     scrollbar-width: none;
-    height: 100vh;
-    font-family: Raleway, sans-serif;
     scroll-behavior: smooth;
 }
 
 /* CONFIGURAÇÕES HEADER */
 header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-top: 0.7rem;
     margin-left: 5rem;
     margin-right: 10rem;
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     height: 6rem;
+    background-color: transparent;
     font-size: 1.6rem;
 
 }
@@ -47,12 +46,12 @@ img.logo-felicita {
 }
 
 .navigation {
-    margin-top: 7rem;
-    margin-right: 10rem;
-    z-index: 1000;
     display: flex;
     justify-content: center;
+    margin-top: 7rem;
+    margin-right: 10rem;
     gap: 2rem;
+    z-index: 1000;
 
 }
 
@@ -62,9 +61,9 @@ img.logo-felicita {
 }
 
 .navigation li>a {
-    color: #818173;
-    position: relative;
     display: inline-block;
+    position: relative;
+    color: #818173;
     text-decoration: none;
 }
 
@@ -81,7 +80,6 @@ img.logo-felicita {
 }
 
 .navigation li>a:hover::after {
-
     width: 100%;
 }
 
@@ -95,49 +93,45 @@ main {
 }
 
 section.destaque {
-    padding: 4rem;
-    background-color: #8c8b79;
-    margin: auto;
-    max-width: 70vw;
-    border-radius: 1rem;
-}
-
-.destaque {
     display: flex;
     flex-direction: column;
     margin: auto;
+    padding: 4rem;
+    max-width: 70vw;
     height: 60rem;
     font-size: 1.6rem;
-
-
+    background-color: #8c8b79;
+    border-radius: 1rem;
 }
 
 #titulo-destaque {
-    justify-content: center;
-    color: white;
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 30%;
     font-size: 3rem;
+    color: white;
 }
 
 #destaque {
-    height: 90%;
-    border-radius: 1rem;
     display: flex;
     justify-content: space-around;
+    height: 90%;
+    border-radius: 1rem;
 }
 
 
 
 .img-destaque {
-    background-color: #cfcbbf;
     display: flex;
-    height: 100%;
-    justify-content: center;
     align-items: center;
-    border-radius: 2rem;
+    justify-content: center;
     min-width: 30rem;
+    height: 100%;
+    background-color: #cfcbbf;
+    border: 1px solid #646353;
+    border-radius: 2rem;
+
 
 }
 
@@ -153,81 +147,86 @@ section.destaque {
 }
 
 .texto-destaque {
-    background-color: #cfcbbf;
-    padding: 1rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
     height: 95%;
     width: 50%;
-    justify-content: center;
-    align-items: center;
+    border: 1px solid #646353;
+    background-color: #cfcbbf;
     gap: 2rem;
-
     border-radius: 2rem;
 }
 
 
 
 #p-destaque {
-    color: #818173;
-    font-size: 2.5rem;
     display: flex;
     align-items: center;
     height: 70%;
+    font-size: 2.5rem;
+    color: #818173;
 }
 
 .preço-destaque {
+    display: flex;
+    height: 70%;
     font-size: 8rem;
     color: #818173;
-
-    display: flex;
-
-    height: 70%;
 }
 
 .btn-destaque {
-    border-radius: .5rem;
-    cursor: pointer;
     height: 10rem;
     width: 15rem;
     border: none;
     outline: none;
     background-color: #f6f0f0;
-    color: #8c8b79;
-    border: 1px solid #8c8b79;
     font-family: Raleway, sans-serif;
+    color: #8c8b79;
+    border-radius: .5rem;
+    cursor: pointer;
 }
 
 .btn-destaque:hover {
-    border: 1px solid white;
+    background-color: #ffffff;
+    transition: background-color .5s;
 }
 
+.slideshow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 2rem;
+}
 
 /* CONFIGURAÇÕES SECTION PRODUTOS */
 
 section#produtos {
-    margin-top: 10rem;
-    font-size: 1.6rem;
     display: flex;
     flex-direction: column;
+    margin-top: 10rem;
     height: 180rem;
+    font-size: 1.6rem;
 }
 
 .par-de-produtos1,
 .par-de-produtos2,
 .par-de-produtos3 {
     display: flex;
-    height: 60rem;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    height: 60rem;
 
 }
 
 .produto1,
 .produto2 {
     display: flex;
-    width: 50%;
     justify-content: center;
+    width: 50%;
     gap: 1rem;
 }
 
@@ -238,10 +237,9 @@ section#produtos {
 .texto-produto {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 20%;
     justify-content: space-around;
+    width: 20%;
 }
 
 .preco {
@@ -267,20 +265,21 @@ section#produtos {
 }
 
 .btn-produto {
-    border-radius: .5rem;
-    cursor: pointer;
     height: 5rem;
     width: 10rem;
     border: none;
     outline: none;
     background-color: #8c8b79;
-    color: #f6f0f0;
-    border: 1px solid #8c8b79;
     font-family: Raleway, sans-serif;
+    color: #f6f0f0;
+    border-radius: .5rem;
+    cursor: pointer;
 }
 
 .btn-produto:hover {
+    border: none;
     background-color: #acab99;
+    transition: background-color .5s;
 }
 
 
@@ -290,26 +289,40 @@ section#produtos {
 section#sobre-nos {
     display: flex;
     align-items: center;
-
-    height: 55rem;
-    font-size: 1.6rem;
+    height: 60rem;
+    background-color: #bebeaf;
+    font-size: 2rem;
 }
 
 .sobre-nos {
     display: flex;
+    justify-content: center;
     width: 100%;
     height: 70%;
-    justify-content: center;
-
 }
 
 .texto-sobre {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
     width: 70%;
+    color: #f5f3ee;
+    gap: 3rem;
+}
 
+.texto-sobre>.hr {
+    width: 60rem;
+    height: 0.2rem;
+    background-color: #f5f3ee;
+}
+
+.titulo-sobre {
+    font-size: 3rem;
+}
+
+.p-sobre {
+    max-width: 60rem;
+    text-align: justify;
 }
 
 .img-sobre {
@@ -321,13 +334,15 @@ section#sobre-nos {
 
 
 
+
 /* CONFIGURAÇÕES FOOTER*/
 footer {
     display: flex;
-    font-size: 1.6rem;
-    height: 5em;
     align-items: center;
     justify-content: center;
+    margin-top: 4rem;
+    height: 5em;
+    font-size: 1.6rem;
 }
 
 @media screen and (max-width: 850px) {
@@ -346,33 +361,35 @@ footer {
 
     .menu {
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
         margin-left: 4rem;
     }
 
     .imagem-menu {
-        cursor: pointer;
         height: 5rem;
         width: 5rem;
+        background-color: #8c8b79;
+        border-radius: .5rem;
+        cursor: pointer;
     }
 
     /* SEÇÃO DESTAQUE */
-    .destaque {
+    section.destaque {
         align-items: center;
         margin: auto;
         height: 80rem;
-
-
     }
 
     #destaque {
         flex-direction: column;
+        margin-top: 8rem;
     }
 
     .img-destaque {
-        background-color: transparent;
         display: flex;
+        background-color: transparent;
+        border: none;
     }
 
     .imagem-destaque {
@@ -383,8 +400,9 @@ footer {
     .texto-destaque {
         height: 100%;
         width: 100%;
-        gap: 2rem;
         background-color: transparent;
+        gap: 2rem;
+        border: none;
 
     }
 
@@ -393,8 +411,8 @@ footer {
     }
 
     .preço-destaque {
-        color: #f6f0f0;
         font-size: 5rem;
+        color: #f6f0f0;
     }
 
     .btn-destaque {
@@ -414,8 +432,8 @@ footer {
     section#produtos {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
         height: 360rem;
     }
 
@@ -423,8 +441,8 @@ footer {
     .par-de-produtos2,
     .par-de-produtos3 {
         display: flex;
-        height: 120rem;
         flex-direction: column;
+        height: 120rem;
         gap: 10rem;
     }
 
@@ -432,17 +450,15 @@ footer {
     .produto2 {
         display: flex;
         flex-direction: column;
-        width: 50%;
         align-items: center;
+        width: 50%;
     }
-
-
 
     .texto-produto {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
         width: 20%;
         gap: 1rem;
     }
@@ -456,16 +472,13 @@ footer {
         text-decoration-line: line-through;
     }
 
-
     .img-produto {
         width: 100%;
-
     }
 
     #img-produto {
         max-width: 18.2rem;
         min-width: 18.2rem;
-
     }
 
     .btn-produto {
@@ -478,28 +491,30 @@ footer {
 
     .sobre-nos {
         display: flex;
+        justify-content: center;
         width: 100%;
         height: 70%;
-        justify-content: center;
-
     }
 
     .texto-sobre {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 90%;
+        font-size: 1.7rem;
         gap: 3rem;
-        width: 60%;
-
     }
 
     .img-sobre {
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
-        width: 40%;
+
     }
 
+    .imagem-sobre {
+        display: none;
+    }
 
 
 }
@@ -525,25 +540,22 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 10rem;
-        
     }
 
     .par-de-produtos1,
     .par-de-produtos2,
     .par-de-produtos3 {
-        min-width: 35rem;
         display: flex;
         flex-direction: column;
-        gap: 10rem;
         margin-bottom: 15rem;
+        min-width: 35rem;
+        gap: 10rem;
     }
 
     .produto1,
     .produto2 {
         gap: 10rem;
     }
-
-
 
     .texto-produto {
         gap: 2rem;
@@ -552,7 +564,58 @@ footer {
     #img-produto {
         max-width: 18.2rem;
         min-width: 18.2rem;
-        
+    }
 
+    /* CONFIGURAÇÕES SEÇÃO SOBRE NÓS */
+    section#sobre-nos {
+        display: flex;
+        align-items: center;
+        margin-top: 45rem;
+        height: 50rem;
+        background-color: #bebeaf;
+        font-size: 2rem;
+    }
+
+    .sobre-nos {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 70%;
+    }
+
+    .texto-sobre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        color: #f5f3ee;
+        gap: 3rem;
+    }
+
+    .texto-sobre>.hr {
+        height: 0.2rem;
+        width: 50rem;
+        background-color: #f5f3ee;
+    }
+
+    .titulo-sobre {
+        font-size: 2.5rem;
+    }
+
+    .p-sobre {
+        max-width: 50rem;
+        font-size: 1.7rem;
+        text-align: justify;
+    }
+
+    .img-sobre {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+    }
+
+    .imagem-sobre {
+        height: 80rem;
     }
 }
