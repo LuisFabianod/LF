@@ -24,7 +24,7 @@ class DarkMode {
     }
 
     darkMode() {
-      this.linkCSS.setAttribute('href', 'readme/style-dark.css')
+        this.linkCSS.setAttribute('href', 'readme/style-dark.css')
     }
 
     sunMode() {
@@ -33,3 +33,19 @@ class DarkMode {
 }
 const darkMode = new DarkMode();
 darkMode.trocaIcon();
+
+class AtivaGif {
+    constructor() {
+        this.imagemSite = document.querySelector('.img')
+    }
+    detectaHover() {
+        this.imagemSite.addEventListener('mouseover', () => {
+            this.imagemSite.setAttribute('src', "readme/imagens/gif-felicita.gif")
+        })
+        this.imagemSite.addEventListener('mouseout', () => {
+            this.imagemSite.setAttribute('src', "readme/imagens/print-felicita.png")
+        })
+    }
+}
+const ativarGif = new AtivaGif()
+ativarGif.detectaHover()
