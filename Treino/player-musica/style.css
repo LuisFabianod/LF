@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f0D13;
+
+    font-family: system-ui, sans-serif;
+
+}
+
+#app {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    grid-template-areas:
+        'A B'
+        'A C';
+
+    gap: 32px;
+    place-content: center;
+    height: 100vh;
+}
+
+#player-1 {
+    grid-area: A;
+    padding: 50px 38px;
+}
+
+#player-1 img {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#player-1 .info {
+    margin-top: 28px;
+}
+
+.player h1 {
+    color: #E1E1E6;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.player p {
+    color: #e1e1e6a9;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+#player-2 {
+    grid-area: B;
+    height: fit-content;
+}
+
+#player-3 {
+    grid-area: C;
+}
+
+.player {
+    background-color: #2A2141;
+    padding: 28px;
+    border-radius: 10px;
+}
+
+#player-1 .wrapper {
+    width: 190px;
+}
+
+.controls {
+    margin: 28px;
+    display: flex;
+    justify-content: space-between;
+    color: #E1E1E6;
+
+}
+
+.track-time {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.track {
+    position: relative;
+}
+
+.track::before {
+    content: '';
+    height: 6px;
+    width: 100%;
+    display: block;
+    background-color: #D9D9D9;
+    opacity: .3;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.track::after {
+    content: '';
+    height: 6px;
+    width: 80%;
+    display: block;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+}
+
+p.time {
+    font-size: 14px;
+}
+
+#info-img {
+    display: flex;
+    gap: 25px;
+}
+
+#info-img img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}
+
+#info-text {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+@media (max-width:640px) {
+    #app{
+        display: flex;
+        height: 100vh;
+        align-items: center;
+    }
+
+    #player-2,
+    #player-3 {
+        display: none;
+    }
+}
